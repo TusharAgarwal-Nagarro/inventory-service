@@ -1,0 +1,10 @@
+version: 1.0
+Resources:
+  - TargetService:
+      Type: AWS::ECS::Service
+      Properties:
+        TaskDefinition: "arn:aws:ecs:ap-south-1:029820875516:task-definition/inventory-service:6"
+        LoadBalancerInfo:
+          ContainerName: "inventory-service"
+          ContainerPort: "8001"
+        PlatformVersion: "LATEST"
