@@ -3,7 +3,7 @@ Resources:
   - TargetService:
       Type: AWS::ECS::Service
       Properties:
-        TaskDefinition: "arn:aws:ecs:ap-south-1:029820875516:task-definition/inventory-service:6"
+        TaskDefinition: "arn:aws:ecs:ap-south-1:029820875516:task-definition/inventory-service:7"
         LoadBalancerInfo:
           ContainerName: "inventory-service"
           ContainerPort: "8001"
